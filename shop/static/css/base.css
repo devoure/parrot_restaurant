@@ -35,8 +35,11 @@ a:hover {
   font-family: 'Ubuntu', sans-serif;
   float:left;
   color:#333;
-  font-size:22px;
+  font-size:28px;
   margin-right:10%;
+  background-color:#4a3626;
+  color:white;
+  padding:10px;
 }
 
 #subheader .cart {
@@ -47,6 +50,8 @@ a:hover {
 #content {
   padding:0 100px;
   overflow:hidden;
+  background-color:#4a3626;
+  opacity:0.9;
 }
 
 #sidebar {
@@ -95,6 +100,8 @@ a:hover {
   height:200px;
   margin-bottom:8px;
   border-radius: 50%;
+  background-color:black;
+  padding:5px;
 }
 
 .product-detail {
@@ -112,6 +119,9 @@ a:hover {
   float:left;
   padding:0 20px 20px 0;
 }
+.product-list a{
+  color:white;
+}
 
 .product-detail h1 {
   margin-bottom:0;
@@ -119,6 +129,12 @@ a:hover {
 
 .product-detail h2 {
   margin-top:10px;
+}
+.product-detail .price{
+  color:black;
+}
+.product-detail p{
+  color:white;
 }
 .pagination {
   float:right;
