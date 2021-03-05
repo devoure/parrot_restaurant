@@ -142,6 +142,12 @@ ul.errorlist {
 #subheader .cart {
   float:right;
   padding-top:4px;
+  background-color:#4a3626;
+  padding:5px;
+  border-radius:10px;
+  color:white;
+  font-style: italic;
+  font-size:15px;
 }
 
 #content {
