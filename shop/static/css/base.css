@@ -1,4 +1,3 @@
-
 @import  url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body { 
@@ -246,4 +245,46 @@ ul.errorlist {
 
 .pagination .step-links{
   float:right;
+}
+.order-form {
+    float:left;
+}
+
+.order-info {
+    float:right;
+    width:300px;
+    background:#efefef;
+    padding:10px 20px;
+    color:#333;
+    border-bottom:4px solid #5993bb;
+}
+
+.order-info h3 {
+    color:#5993bb;
+}
+
+.order-info ul li {
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+
+.order-info p {
+    font-weight:bold;
+    float:right;
+}
+
+.order-info span {
+    float:right;
+}
+.order-success{
+  background-color:#efefef;
+  padding:5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.order-success .thank{
+  background-color: #5993bb;
+  padding:5px;
+  border-radius: 10px;
 }
