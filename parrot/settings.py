@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import braintree
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig'
+    'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig'
 ]
 
 MIDDLEWARE = [
@@ -119,6 +121,19 @@ USE_L10N = True
 
 USE_TZ = True
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER =os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+#Braintree settings
+BRAINTREE_MERCHANT_ID = os.environ['BRAINTREE_ID']
+BRAINTREE_PUBLIC_KEY = os.environ['BRAINTREE_PUB_KEY']
+BRAINTREE_PRIVATE_KEY = os.environ['BRAINTREE_PRIV_KEY']
+
+BRAINTREE_CONF = braintree.Configuration(braintree.Environment.Sandbox,
+        BRAINTREE_MERCHANT_ID, BRAINTREE_PUBLIC_KEY, BRAINTREE_PRIVATE_KEY)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
