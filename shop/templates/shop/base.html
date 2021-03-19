@@ -1,9 +1,10 @@
+{% load i18n %}
 {% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>{% block title %}Parrot Restaurant{% endblock %}</title>
+    <title>{% block title %}{% trans "Parrot Restaurant" %}{% endblock %}</title>
     <link href={% static "css/base.css" %} rel="stylesheet">
 <style type="text/css">
 body{
@@ -16,19 +17,38 @@ body{
   <body>
     <div id="header">
       <div id="header">
-        <a href="/" class="logo">Parrot Restaurant</a>
+        <a href="/" class="logo">{% trans "Parrot Restaurant" %}</a>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        <div class="languages">
+          <p>{% trans "Language" %}:</p>
+          <ul class="languages">
+            {% for language in languages %}
+            <li>
+              <a href="/{{ language.code }}/"{% if language.code == LANGUAGE_CODE %} class="selected"{% endif %}>
+                {% if language.code == 'en' %}<img src={% static "img/eng.jpg" %}>{{ language.name_local }}{% endif %}
+                {% if language.code == 'sw' %}<img src={% static "img/tz.png" %}>{{ language.name_local }}{% endif %}
+                {% if language.code == 'es' %}<img src={% static "img/spain.png" %}>{{ language.name_local }}{% endif %}
+              </a>
+              {% endfor %}
+          </ul>
+        </div>
       </div>
       <div id="subheader">
         <div class="cart">
           {% with total_items=cart|length %}
            {% if total_items > 0 %}
-            Your order cart:
+           {% trans "Your order cart" %}:
             <a href="{% url "cart:cart_detail" %}">
-              {{ total_items }} item{{ total_items|pluralize }} ,
-              {{ cart.get_total_price }} Ksh
+              {% blocktrans with total=cart.get_total_price count items=total_items %}
+              {{ items }} item, {{ total }} Ksh
+              {% plural %}
+              {{ items }} items, {{ total }} Ksh
+              {% endblocktrans %}
             </a>
             {% else %}
-             Your order cart is empty.
+            {% trans "Your order cart is empty" %}.
            {% endif %}
           {% endwith %}
         </div>

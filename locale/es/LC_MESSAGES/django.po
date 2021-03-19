@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-18 12:31+0300\n"
+"PO-Revision-Date: 2021-03-18 09:32+0000\n"
+"Last-Translator: b'  <Disguisedsandwich@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
+
+#: cart/forms.py:8 cart/templates/cart/detail.html:16
+#, fuzzy
+msgid "Quantity"
+msgstr "cantidad"
+
+#: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html:10
+#: shop/templates/shop/base.html:40
+msgid "Your order cart"
+msgstr "su carrito de pedidos"
+
+#: cart/templates/cart/detail.html:14
+msgid "Image"
+msgstr "Imagen"
+
+#: cart/templates/cart/detail.html:15
+msgid "Food order"
+msgstr "Orden de comida"
+
+#: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html:42
+msgid "Remove"
+msgstr "Retirar"
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit price"
+msgstr "Precio unitario"
+
+#: cart/templates/cart/detail.html:19
+msgid "Price"
+msgstr "Precio"
+
+#: cart/templates/cart/detail.html:36
+msgid "Update"
+msgstr "Actualizar"
+
+#: cart/templates/cart/detail.html:53
+msgid "Subtotal"
+msgstr "Total parcial"
+
+#: cart/templates/cart/detail.html:58
+#, python-format
+msgid ""
+"\n"
+"      <td class=\" num neg\">\n"
+"        \"%(code)s\" coupon\n"
+"        (%(discount)s%% off)\n"
+"      </td>\n"
+"      "
+msgstr ""
+"\n"
+"      <td class=\" num neg\">\n"
+"        \"%(code)s\" cupon\n"
+"        (%(discount)s%% descueto)\n"
+"      </td>\n"
+"      "
+
+#: cart/templates/cart/detail.html:71
+msgid "Total"
+msgstr "Total"
+
+#: cart/templates/cart/detail.html:77
+msgid "Apply a coupon"
+msgstr "Aplicar un cupon"
+
+#: cart/templates/cart/detail.html:80
+msgid "Apply"
+msgstr "Aplicar"
+
+#: cart/templates/cart/detail.html:84
+msgid "Continue ordering"
+msgstr "Seguir ordenando"
+
+#: cart/templates/cart/detail.html:85
+msgid "Checkout"
+msgstr "Revisa"
+
+#: parrot/settings.py:120
+msgid "English"
+msgstr "Ingles"
+
+#: parrot/settings.py:121
+msgid "Kiswahili"
+msgstr "Swahili"
+
+#: parrot/settings.py:122
+msgid "Spanish"
+msgstr "Espanol"
+
+#: parrot/urls.py:23
+msgid "admin/"
+msgstr "administracion/"
+
+#: parrot/urls.py:25
+msgid "coupons/"
+msgstr "cupon/"
+
+#: parrot/urls.py:26
+msgid "cart/"
+msgstr "carro/"
+
+#: parrot/urls.py:27
+msgid "payment/"
+msgstr "pago"
+
+#: parrot/urls.py:29
+msgid "orders/"
+msgstr "pedidos"
+
+#: payment/urls.py:8
+msgid "process/"
+msgstr "proceso/"
+
+#: payment/urls.py:9
+msgid "done/"
+msgstr "hecho/"
+
+#: payment/urls.py:10
+msgid "canceled/"
+msgstr "cancelada/"
+
+#: shop/templates/shop/base.html:7 shop/templates/shop/base.html:20
+msgid "Parrot Restaurant"
+msgstr "Restaurante de Parrot"
+
+#: shop/templates/shop/base.html:25
+msgid "Language"
+msgstr "Idiomas"
+
+#: shop/templates/shop/base.html:42
+#, python-format
+msgid ""
+"\n"
+"              %(items)s item, %(total)s Ksh\n"
+"              "
+msgid_plural ""
+"\n"
+"              %(items)s items, %(total)s Ksh\n"
+"              "
+msgstr[0] ""
+"\n"
+"              %(items)s producto, %(total)s Ksh\n"
+"              "
+msgstr[1] ""
+"\n"
+"              %(items)s productos, %(total)s Ksh\n"
+"              "
+
+#: shop/templates/shop/base.html:49
+msgid "Your order cart is empty"
+msgstr "Su carrito de pedido esta vacio"
+
+#: shop/templates/shop/pagination.html:5
+msgid "Previous"
+msgstr "Previa"
+
+#: shop/templates/shop/pagination.html:8
+#, python-format
+msgid ""
+"\n"
+"      Page %(page)s of %(total)s.\n"
+"      "
+msgstr ""
+"\n"
+"      Pagina %(page)s de %(total)s.\n"
+"      "
+
+#: shop/templates/shop/pagination.html:13
+msgid "Next"
+msgstr "Proxima"
+
+#: shop/templates/shop/product/detail.html:20
+msgid "Order to cart"
+msgstr "Orden al carro"
+
+#: shop/templates/shop/product/list.html:11
+msgid "Categories"
+msgstr "Categorias"
+
+#: shop/templates/shop/product/list.html:14
+msgid "All"
+msgstr "Todos"
+
+#: shop/templates/shop/product/list.html:24
+msgid "Full Menu"
+msgstr "Menu Completo"

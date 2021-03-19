@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-18 12:31+0300\n"
+"PO-Revision-Date: 2021-03-18 09:32+0000\n"
+"Last-Translator: b'  <Disguisedsandwich@gmail.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
+
+#: cart/forms.py:8 cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Wingi"
+
+#: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html:10
+#: shop/templates/shop/base.html:40
+msgid "Your order cart"
+msgstr "Kapu lako la kuagiza"
+
+#: cart/templates/cart/detail.html:14
+msgid "Image"
+msgstr "Picha"
+
+#: cart/templates/cart/detail.html:15
+msgid "Food order"
+msgstr "Angiza chakula"
+
+#: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html:42
+msgid "Remove"
+msgstr "Toa"
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit price"
+msgstr "Bei ya chakula"
+
+#: cart/templates/cart/detail.html:19
+msgid "Price"
+msgstr "Bei"
+
+#: cart/templates/cart/detail.html:36
+msgid "Update"
+msgstr "Sasisha"
+
+#: cart/templates/cart/detail.html:53
+msgid "Subtotal"
+msgstr "Jumla ndogo"
+
+#: cart/templates/cart/detail.html:58
+#, python-format
+msgid ""
+"\n"
+"      <td class=\" num neg\">\n"
+"        \"%(code)s\" coupon\n"
+"        (%(discount)s%% off)\n"
+"      </td>\n"
+"      "
+msgstr ""
+"\n"
+"      <td class=\" num neg\">\n"
+"        \"%(code)s\" Kuponi\n"
+"        (%(discount)s%% Punguzo)\n"
+"      </td>\n"
+"      "
+
+#: cart/templates/cart/detail.html:71
+msgid "Total"
+msgstr "Jumla"
+
+#: cart/templates/cart/detail.html:77
+msgid "Apply a coupon"
+msgstr "Tumia kuponi"
+
+#: cart/templates/cart/detail.html:80
+msgid "Apply"
+msgstr "Tumia"
+
+#: cart/templates/cart/detail.html:84
+msgid "Continue ordering"
+msgstr "Endelea kuagiza"
+
+#: cart/templates/cart/detail.html:85
+msgid "Checkout"
+msgstr "Lipia"
+
+#: parrot/settings.py:120
+msgid "English"
+msgstr "Kingereza"
+
+#: parrot/settings.py:121
+msgid "Kiswahili"
+msgstr "Kiswahili"
+
+#: parrot/settings.py:122
+msgid "Spanish"
+msgstr "Kihispania"
+
+#: parrot/urls.py:23
+msgid "admin/"
+msgstr "msimamizi/"
+
+#: parrot/urls.py:25
+msgid "coupons/"
+msgstr "kuponi/"
+
+#: parrot/urls.py:26
+msgid "cart/"
+msgstr "kapu/"
+
+#: parrot/urls.py:27
+msgid "payment/"
+msgstr "malipo/"
+
+#: parrot/urls.py:29
+msgid "orders/"
+msgstr "maagizo/"
+
+#: payment/urls.py:8
+msgid "process/"
+msgstr "mchakato/"
+
+#: payment/urls.py:9
+msgid "done/"
+msgstr "kumaliza/"
+
+#: payment/urls.py:10
+msgid "canceled/"
+msgstr "kufutwa/"
+
+#: shop/templates/shop/base.html:7 shop/templates/shop/base.html:20
+msgid "Parrot Restaurant"
+msgstr "Parrot Restaurant"
+
+#: shop/templates/shop/base.html:25
+msgid "Language"
+msgstr "Lugha"
+
+#: shop/templates/shop/base.html:42
+#, python-format
+msgid ""
+"\n"
+"              %(items)s item, %(total)s Ksh\n"
+"              "
+msgid_plural ""
+"\n"
+"              %(items)s items, %(total)s Ksh\n"
+"              "
+msgstr[0] ""
+"\n"
+"              %(items)s bidhaa, %(total)s Ksh\n"
+"              "
+msgstr[1] ""
+"\n"
+"              %(items)s bidhaa, %(total)s Ksh\n"
+"              "
+
+#: shop/templates/shop/base.html:49
+msgid "Your order cart is empty"
+msgstr "Kapu lako la kuagiza lipo tupo"
+
+#: shop/templates/shop/pagination.html:5
+msgid "Previous"
+msgstr "Awali"
+
+#: shop/templates/shop/pagination.html:8
+#, python-format
+msgid ""
+"\n"
+"      Page %(page)s of %(total)s.\n"
+"      "
+msgstr ""
+"\n"
+"      Ukurasa %(page)s wa %(total)s.\n"
+"      "
+
+#: shop/templates/shop/pagination.html:13
+msgid "Next"
+msgstr "Ijayo"
+
+#: shop/templates/shop/product/detail.html:20
+msgid "Order to cart"
+msgstr "Agiza"
+
+#: shop/templates/shop/product/list.html:11
+msgid "Categories"
+msgstr "Makundi"
+
+#: shop/templates/shop/product/list.html:14
+msgid "All"
+msgstr "Kila kitu"
+
+#: shop/templates/shop/product/list.html:24
+msgid "Full Menu"
+msgstr "Menu nzima"
