@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
     'coupons.apps.CouponsConfig',
-    'rosetta'
+    'rosetta',
+    'parler'
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,18 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+#parler settings
+PARLER_LANGUAGES = {
+        None: (
+            {'code': 'en'},
+            {'code': 'es'},
+            {'code': 'sw'},
+            ),
+        'default': {
+            'fallback': 'en',
+            'hide_untranslated': False,
+            }
+        }
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
