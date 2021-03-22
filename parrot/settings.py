@@ -92,6 +92,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+#redis settings
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
 #sessions
 CART_SESSION_ID = 'cart'
 
